@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+    android:orientation="vertical"
+    android:background="#EDEDED">
+
+    <!-- IMAGE FIXE -->
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"/>
+
+    <!-- SCROLL -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- TITLE -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pacifico"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#444"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <!-- META -->
+            <TextView
+                android:id="@+id/meta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#777"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- INGREDIENTS TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingrédients :"
+                android:fontFamily="@font/pacifico"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#444"
+                android:layout_marginTop="8dp"/>
+
+            <!-- INGREDIENTS TEXT -->
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#555"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- DESCRIPTION TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description :"
+                android:fontFamily="@font/pacifico"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#444"/>
+
+            <!-- DESCRIPTION TEXT -->
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#555"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- STEPS TITLE -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Étapes :"
+                android:fontFamily="@font/pacifico"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#444"/>
+
+            <!-- STEPS TEXT -->
+            <TextView
+                android:id="@+id/steps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#555"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
